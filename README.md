@@ -8,7 +8,7 @@
 6. `cd ..`
 7. `docker compose up`
 8. go to http://localhost:16686/search in your browser - check, jaeger is works
-9. send POST or GET request
+9. send POST request
 
 ### POST
 #### terminal 
