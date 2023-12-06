@@ -8,12 +8,14 @@
 6. `cd ..`
 7. `docker compose up`
 8. go to http://localhost:16686/search in your browser - check, jaeger is works
-9. send POST request 
-### terminal 
+9. send POST or GET request
+
+### POST
+#### terminal 
 ```
 curl -X POST -d "{\"customerName:\"alex\"}" -H "Content-Type: application/json" http://localhost:8080/customer
 ```
-### postman
+#### postman
 - method - POST
 - URL - http://localhost:8080/customer
 - body - raw
@@ -25,11 +27,13 @@ curl -X POST -d "{\"customerName:\"alex\"}" -H "Content-Type: application/json" 
 
 10. go to http://localhost:16686/search in your browser - check ms-one trace
 11. send GET request
-### terminal 
+
+### GET
+#### terminal 
 ```
 curl http://localhost:8080/customer 
 ```
-### postman
+#### postman
 - method - GET
 - URL - http://localhost:8080/customer
 - body - none
